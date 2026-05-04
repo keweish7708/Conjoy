@@ -1,0 +1,725 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Conjoy Innovation Technology - Power Solutions for Data Centers</title>
+  <link rel="stylesheet" href="../styles.css">
+  <style>
+    /* 参考 screen.jpg 的样式 */
+    
+    :root {
+      --ref-primary: #00285a;
+      --ref-primary-light: #0a3246;
+      --ref-gray: #c8d2dc;
+      --ref-light: #fafafa;
+    }
+    
+    /* Navbar - 浅灰色 */
+    .navbar {
+      background: linear-gradient(180deg, rgba(250,250,250,0.95) 0%, rgba(220,225,229,0.9) 100%);
+      backdrop-filter: blur(10px);
+      border-bottom: 1px solid rgba(200,210,220,0.5);
+    }
+    
+    .nav-logo {
+      color: var(--ref-primary);
+    }
+    
+    .nav-links a {
+      color: var(--gray-700);
+    }
+    
+    .nav-links a:hover {
+      color: var(--ref-primary);
+    }
+    
+    /* Hero - 深蓝背景 + 背景图片 */
+    .hero-ref {
+      min-height: 90vh;
+      background: 
+        linear-gradient(135deg, rgba(0,40,90,0.85) 0%, rgba(10,58,90,0.8) 50%, rgba(13,48,70,0.85) 100%),
+        url(../hero-bg.jpg) center/cover no-repeat;
+      position: relative;
+      display: flex;
+      align-items: center;
+    }
+    
+    .hero-ref::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: 
+        radial-gradient(ellipse at 30% 50%, rgba(0,40,90,0.4) 0%, transparent 50%),
+        radial-gradient(ellipse at 80% 20%, rgba(20,80,120,0.3) 0%, transparent 40%);
+      z-index: 1;
+    }
+    
+    .hero-ref .container {
+      position: relative;
+      z-index: 2;
+    }
+    
+    .hero-content {
+      max-width: 600px;
+      color: white;
+      padding: 100px 0;
+    }
+    
+    .hero-label {
+      display: inline-block;
+      font-size: 13px;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      color: #8ab4d4;
+      margin-bottom: 20px;
+      padding: 6px 14px;
+      background: rgba(255,255,255,0.1);
+      border-radius: 20px;
+      border: 1px solid rgba(255,255,255,0.15);
+    }
+    
+    .hero-title {
+      font-size: 52px;
+      font-weight: 800;
+      line-height: 1.15;
+      margin-bottom: 24px;
+      letter-spacing: -0.5px;
+    }
+    
+    .hero-title span {
+      color: #8ab4d4;
+    }
+    
+    .hero-desc {
+      font-size: 17px;
+      line-height: 1.7;
+      opacity: 0.9;
+      margin-bottom: 36px;
+      max-width: 480px;
+    }
+    
+    .hero-cta {
+      display: flex;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
+    
+    .hero-cta .btn-primary {
+      background: linear-gradient(135deg, #1a5f9a 0%, #0d4a7a 100%);
+      border: none;
+      box-shadow: 0 4px 20px rgba(0,40,90,0.4);
+    }
+    
+    .hero-cta .btn-primary:hover {
+      background: linear-gradient(135deg, #206faa 0%, #135a8a 100%);
+      transform: translateY(-2px);
+    }
+    
+    /* Stats Bar - 浅灰背景 */
+    .stats-bar {
+      background: linear-gradient(180deg, #f0f2f5 0%, #e8ecef 100%);
+      padding: 50px 0;
+      border-bottom: 1px solid #dce1e5;
+    }
+    
+    .stats-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 40px;
+      text-align: center;
+    }
+    
+    .stat-item h3 {
+      font-size: 36px;
+      font-weight: 800;
+      color: var(--ref-primary);
+      margin-bottom: 8px;
+    }
+    
+    .stat-item p {
+      color: var(--gray-600);
+      font-size: 14px;
+      font-weight: 500;
+    }
+    
+    /* Services Section */
+    .services-section {
+      background: white;
+      padding: 100px 0;
+    }
+    
+    .section-header {
+      text-align: center;
+      max-width: 700px;
+      margin: 0 auto 60px;
+    }
+    
+    .section-label {
+      display: inline-block;
+      font-size: 13px;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      color: var(--ref-primary);
+      margin-bottom: 16px;
+      padding: 6px 14px;
+      background: rgba(0,40,90,0.08);
+      border-radius: 20px;
+    }
+    
+    .section-title {
+      font-size: 38px;
+      font-weight: 800;
+      color: var(--gray-900);
+      margin-bottom: 16px;
+    }
+    
+    .section-desc {
+      color: var(--gray-600);
+      font-size: 17px;
+      line-height: 1.7;
+    }
+    
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 30px;
+    }
+    
+    .service-card {
+      background: linear-gradient(135deg, #f8fafc 0%, #f0f4f8 100%);
+      border: 1px solid #e2e8f0;
+      border-radius: 16px;
+      padding: 40px;
+      transition: all 0.3s ease;
+    }
+    
+    .service-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 20px 40px rgba(0,40,90,0.1);
+      border-color: #c8d2dc;
+    }
+    
+    .service-icon {
+      width: 60px;
+      height: 60px;
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 28px;
+      margin-bottom: 24px;
+    }
+    
+    .service-card h3 {
+      font-size: 22px;
+      font-weight: 700;
+      color: var(--gray-900);
+      margin-bottom: 12px;
+    }
+    
+    .service-card p {
+      color: var(--gray-600);
+      line-height: 1.7;
+      margin-bottom: 20px;
+    }
+    
+    .service-card a {
+      color: var(--ref-primary);
+      font-weight: 600;
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+    }
+    
+    /* Image Section - 使用背景图片 */
+    .image-section {
+      position: relative;
+      height: 450px;
+      background: 
+        linear-gradient(135deg, rgba(10,26,42,0.85) 0%, rgba(26,42,58,0.8) 50%, rgba(13,32,48,0.85) 100%),
+        url(../hero-bg.jpg) center/cover no-repeat;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+    }
+    
+    .image-section::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: 
+        radial-gradient(ellipse at 30% 50%, rgba(50,100,150,0.3) 0%, transparent 50%),
+        radial-gradient(ellipse at 70% 70%, rgba(30,80,120,0.25) 0%, transparent 40%),
+        linear-gradient(180deg, rgba(0,0,0,0.2) 0%, rgba(0,0,0,0.4) 100%);
+    }
+    
+    .image-section-content {
+      position: relative;
+      z-index: 2;
+      text-align: center;
+      color: white;
+      max-width: 700px;
+      padding: 0 20px;
+    }
+    
+    .image-section h2 {
+      font-size: 40px;
+      font-weight: 700;
+      margin-bottom: 20px;
+      letter-spacing: -0.5px;
+    }
+    
+    .image-section p {
+      font-size: 18px;
+      opacity: 0.9;
+      line-height: 1.7;
+    }
+    
+    /* Products Section */
+    .products-section {
+      background: linear-gradient(180deg, #f5f7fa 0%, #eef1f5 100%);
+      padding: 100px 0;
+    }
+    
+    .products-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+    }
+    
+    .product-card {
+      background: white;
+      border-radius: 16px;
+      overflow: hidden;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.06);
+      transition: all 0.3s ease;
+    }
+    
+    .product-card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 20px 40px rgba(0,40,90,0.12);
+    }
+    
+    .product-image {
+      height: 180px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 56px;
+    }
+    
+    .product-info {
+      padding: 24px;
+    }
+    
+    .product-info h3 {
+      font-size: 18px;
+      font-weight: 700;
+      color: var(--gray-900);
+      margin-bottom: 8px;
+    }
+    
+    .product-info p {
+      color: var(--gray-600);
+      font-size: 14px;
+      line-height: 1.6;
+    }
+    
+    /* CTA Section - 参考图中的蓝绿色调 */
+    .cta-section {
+      background: linear-gradient(135deg, #1a5f8a 0%, #0d4a6a 50%, #0a3a5a 100%);
+      padding: 100px 0;
+      text-align: center;
+      color: white;
+      position: relative;
+      overflow: hidden;
+    }
+    
+    .cta-section::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: 
+        radial-gradient(ellipse at 20% 80%, rgba(100,180,220,0.2) 0%, transparent 50%),
+        radial-gradient(ellipse at 80% 20%, rgba(80,160,200,0.15) 0%, transparent 40%);
+    }
+    
+    .cta-section .container {
+      position: relative;
+      z-index: 2;
+    }
+    
+    .cta-section h2 {
+      font-size: 40px;
+      font-weight: 700;
+      margin-bottom: 20px;
+      letter-spacing: -0.5px;
+    }
+    
+    .cta-section p {
+      font-size: 18px;
+      opacity: 0.95;
+      margin-bottom: 40px;
+      max-width: 600px;
+      margin-left: auto;
+      margin-right: auto;
+      line-height: 1.7;
+    }
+    
+    .cta-section .btn {
+      background: white;
+      color: var(--ref-primary);
+      font-weight: 600;
+      padding: 16px 36px;
+      border-radius: 8px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+    }
+    
+    .cta-section .btn:hover {
+      background: #f0f4f8;
+      transform: translateY(-2px);
+    }
+    
+    /* Footer - 深蓝灰 */
+    .footer-dark {
+      background: linear-gradient(180deg, #1a2a3a 0%, #0f1a25 100%);
+      color: white;
+      padding: 80px 0 40px;
+    }
+    
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr 1fr;
+      gap: 60px;
+      margin-bottom: 60px;
+    }
+    
+    .footer-brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      font-size: 20px;
+      font-weight: 700;
+      margin-bottom: 20px;
+      color: white;
+    }
+    
+    .footer-brand img {
+      width: 40px;
+      height: 40px;
+      border-radius: 8px;
+      object-fit: cover;
+    }
+    
+    .footer-desc {
+      color: rgba(255, 255, 255, 0.65);
+      line-height: 1.7;
+      font-size: 14px;
+    }
+    
+    .footer-title {
+      font-size: 15px;
+      font-weight: 700;
+      margin-bottom: 20px;
+      color: white;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+    
+    .footer-links {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+    
+    .footer-links a {
+      color: rgba(255, 255, 255, 0.65);
+      text-decoration: none;
+      font-size: 14px;
+      transition: color 0.2s;
+    }
+    
+    .footer-links a:hover {
+      color: #8ab4d4;
+    }
+    
+    .footer-bottom {
+      border-top: 1px solid rgba(255, 255, 255, 0.1);
+      padding-top: 30px;
+      text-align: center;
+      color: rgba(255, 255, 255, 0.5);
+      font-size: 14px;
+    }
+    
+    /* Responsive */
+    @media (max-width: 991px) {
+      .hero-title {
+        font-size: 40px;
+      }
+      
+      .stats-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+      
+      .services-grid {
+        grid-template-columns: 1fr;
+      }
+      
+      .products-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+      
+      .footer-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+    
+    @media (max-width: 576px) {
+      .hero-title {
+        font-size: 32px;
+      }
+      
+      .stats-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+      }
+      
+      .products-grid {
+        grid-template-columns: 1fr;
+      }
+      
+      .footer-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar">
+  <div class="container">
+    <div class="nav-inner">
+      <a href="code.html" class="nav-logo">
+        <img src="../logo.jpg" alt="Logo" class="nav-logo-img">
+        Conjoy Innovation
+      </a>
+      <div class="nav-links">
+        <a href="code.html" class="active">Home</a>
+        <a href="../about_us/code.html">About Us</a>
+        <a href="../products_solutions/code.html">Products</a>
+        <a href="../news_center/code.html">News</a>
+        <a href="../contact_us_english/code.html">Contact</a>
+      </div>
+      <a href="../contact_us_english/code.html" class="nav-cta">Get a Quote</a>
+    </div>
+  </div>
+</nav>
+
+<!-- Hero Section -->
+<section class="hero-ref">
+  <div class="container">
+    <div class="hero-content">
+      <span class="hero-label">Power Solutions Expert</span>
+      <h1 class="hero-title">
+        Powering the Future of <span>Data Centers</span>
+      </h1>
+      <p class="hero-desc">
+        Conjoy Innovation Technology provides comprehensive power equipment and system integration services for North America's leading data centers and computing facilities.
+      </p>
+      <div class="hero-cta">
+        <a href="../products_solutions/code.html" class="btn btn-primary">
+          Explore Solutions
+          <span>→</span>
+        </a>
+        <a href="../contact_us_english/code.html" class="btn" style="background: rgba(255,255,255,0.12); color: white; border: 1px solid rgba(255,255,255,0.25);">
+          Contact Us
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Stats Bar -->
+<section class="stats-bar">
+  <div class="container">
+    <div class="stats-grid">
+      <div class="stat-item">
+        <h3>15+</h3>
+        <p>Years Experience</p>
+      </div>
+      <div class="stat-item">
+        <h3>500+</h3>
+        <p>Projects Completed</p>
+      </div>
+      <div class="stat-item">
+        <h3>50+</h3>
+        <p>Global Partners</p>
+      </div>
+      <div class="stat-item">
+        <h3>24/7</h3>
+        <p>Technical Support</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Services Section -->
+<section class="services-section">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-label">Our Services</span>
+      <h2 class="section-title">Comprehensive Power Solutions</h2>
+      <p class="section-desc">From equipment supply to system integration, we deliver end-to-end solutions for your critical power infrastructure needs.</p>
+    </div>
+    
+    <div class="services-grid">
+      <div class="service-card">
+        <div class="service-icon" style="background: linear-gradient(135deg, #e0f2fe, #dbeafe);">
+          ⚡
+        </div>
+        <h3>System Integration</h3>
+        <p>Complete power system design, installation, and commissioning for data centers and computing facilities.</p>
+        <a href="../products_solutions/code.html">Learn more →</a>
+      </div>
+      
+      <div class="service-card">
+        <div class="service-icon" style="background: linear-gradient(135deg, #fef3c7, #fde68a);">
+          🔧
+        </div>
+        <h3>Supporting Materials</h3>
+        <p>High-quality cables, connectors, and accessories for reliable power distribution systems.</p>
+        <a href="../products_solutions/code.html">Learn more →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Image Section -->
+<section class="image-section">
+  <div class="image-section-content">
+    <h2>Trusted by Industry Leaders</h2>
+    <p>Our power solutions support the infrastructure of Tesla, NVIDIA, OpenAI, Alibaba, and other leading technology companies across North America.</p>
+  </div>
+</section>
+
+<!-- Products Section -->
+<section class="products-section">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-label">Products</span>
+      <h2 class="section-title">Power Equipment Portfolio</h2>
+      <p class="section-desc">High-performance equipment designed for mission-critical applications in data centers and computing facilities.</p>
+    </div>
+    
+    <div class="products-grid">
+      <div class="product-card">
+        <div class="product-image" style="background: linear-gradient(135deg, #1e3a5f, #2d5a87);">
+          ⚡
+        </div>
+        <div class="product-info">
+          <h3>Power Generation</h3>
+          <p>Diesel and gas generators for reliable backup power.</p>
+        </div>
+      </div>
+      
+      <div class="product-card">
+        <div class="product-image" style="background: linear-gradient(135deg, #0f4c75, #1b7f9b);">
+          🔌
+        </div>
+        <div class="product-info">
+          <h3>Transformers</h3>
+          <p>High-efficiency transformers for power distribution.</p>
+        </div>
+      </div>
+      
+      <div class="product-card">
+        <div class="product-image" style="background: linear-gradient(135deg, #1a5f7a, #2e8bc0);">
+          📊
+        </div>
+        <div class="product-info">
+          <h3>Voltage Stabilizers</h3>
+          <p>Advanced voltage regulation for sensitive equipment.</p>
+        </div>
+      </div>
+    </div>
+    
+    <div style="text-align: center; margin-top: 50px;">
+      <a href="../products_solutions/code.html" class="btn btn-primary">
+        View All Products
+        <span>→</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- CTA Section -->
+<section class="cta-section">
+  <div class="container">
+    <h2>Ready to Power Your Project?</h2>
+    <p>Contact our team today to discuss your power infrastructure requirements and get a customized solution proposal.</p>
+    <a href="../contact_us_english/code.html" class="btn">
+      Get a Quote
+      <span>→</span>
+    </a>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer-dark">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-brand">
+          <img src="../logo.jpg" alt="Logo">
+          Conjoy Innovation
+        </div>
+        <p class="footer-desc">
+          Professional power equipment and system integration services for North American data centers and computing centers. We deliver reliable, efficient, and scalable power solutions.
+        </p>
+      </div>
+      <div>
+        <h4 class="footer-title">Products</h4>
+        <div class="footer-links">
+          <a href="../products_solutions/code.html">Power Generation</a>
+          <a href="../products_solutions/code.html">Transformers</a>
+          <a href="../products_solutions/code.html">Voltage Stabilizers</a>
+          <a href="../products_solutions/code.html">Cabinets & Racks</a>
+        </div>
+      </div>
+      <div>
+        <h4 class="footer-title">Solutions</h4>
+        <div class="footer-links">
+          <a href="../products_solutions/code.html">Data Center</a>
+          <a href="../products_solutions/code.html">Computing Center</a>
+          <a href="../products_solutions/code.html">System Integration</a>
+        </div>
+      </div>
+      <div>
+        <h4 class="footer-title">Contact</h4>
+        <div class="footer-links">
+          <a href="../contact_us_english/code.html">📍 Texas, USA</a>
+          <a href="mailto:info@conjoyinnovation.com">✉️ info@conjoyinnovation.com</a>
+          <a href="tel:+1-XXX-XXX-XXXX">📞 +1 (XXX) XXX-XXXX</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      © 2024 Conjoy Innovation Technology. All Rights Reserved.
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,785 @@
+<!DOCTYPE html>
+<html class="light" lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Products & Solutions | Conjoy Innovation Technology</title>
+  <link rel="stylesheet" href="../styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <script>
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "surface-container-low": "#f1f4fa",
+            "on-primary": "#ffffff",
+            "error": "#ba1a1a",
+            "background": "#f7f9ff",
+            "secondary-fixed": "#cde5ff",
+            "on-tertiary-fixed": "#051d30",
+            "on-error": "#ffffff",
+            "tertiary-fixed": "#cfe5ff",
+            "error-container": "#ffdad6",
+            "surface-variant": "#dfe3e8",
+            "on-tertiary": "#ffffff",
+            "surface-container-lowest": "#ffffff",
+            "on-error-container": "#93000a",
+            "inverse-on-surface": "#eef1f7",
+            "on-background": "#181c20",
+            "surface-bright": "#f7f9ff",
+            "on-primary-fixed": "#001a41",
+            "tertiary-fixed-dim": "#b3c9e2",
+            "surface": "#f7f9ff",
+            "primary-container": "#004494",
+            "on-surface": "#181c20",
+            "surface-dim": "#d7dae0",
+            "on-surface-variant": "#434751",
+            "on-primary-fixed-variant": "#004494",
+            "outline-variant": "#c3c6d3",
+            "on-secondary-fixed-variant": "#004b74",
+            "tertiary-container": "#34495e",
+            "on-tertiary-container": "#a2b8d1",
+            "secondary-fixed-dim": "#94ccff",
+            "primary": "#002e69",
+            "on-tertiary-fixed-variant": "#34495e",
+            "on-secondary": "#ffffff",
+            "primary-fixed": "#d8e2ff",
+            "surface-container-highest": "#dfe3e8",
+            "on-secondary-fixed": "#001d32",
+            "inverse-surface": "#2d3135",
+            "surface-tint": "#2b5cad",
+            "outline": "#737783",
+            "inverse-primary": "#adc6ff",
+            "tertiary": "#1d3246",
+            "on-primary-container": "#91b5ff",
+            "primary-fixed-dim": "#adc6ff",
+            "secondary-container": "#5db8fe",
+            "surface-container-high": "#e5e8ee",
+            "secondary": "#006398",
+            "on-secondary-container": "#00476f",
+            "surface-container": "#ebeef4"
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    body { font-family: 'Inter', sans-serif; background-color: #f7f9ff; }
+    .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; }
+    .glass-nav { background: rgba(247, 249, 255, 0.8); backdrop-filter: blur(20px); }
+  </style>
+</head>
+<body class="text-on-background" style="padding-top: 72px;">
+
+<!-- TopNavBar -->
+<nav class="navbar">
+  <div class="container">
+    <div class="nav-inner">
+      <a href="../home_page/code.html" class="nav-logo">
+        <img src="../logo.jpg" alt="Logo" class="nav-logo-img">
+        Conjoy Innovation
+      </a>
+      <div class="nav-links">
+        <a href="../home_page/code.html">Home</a>
+        <a href="../about_us/code.html">About Us</a>
+        <a href="code.html" class="active">Products</a>
+        <a href="../news_center/code.html">News</a>
+        <a href="../contact_us_english/code.html">Contact</a>
+      </div>
+      <a href="../contact_us_english/code.html" class="nav-cta">Get a Quote</a>
+    </div>
+  </div>
+</nav>
+
+<main>
+
+<!-- Hero Section -->
+<section class="relative overflow-hidden bg-primary py-24 lg:py-32">
+  <div class="absolute inset-0 opacity-20">
+    <img alt="Industrial Infrastructure" class="w-full h-full object-cover" src="../hero-bg.jpg"/>
+  </div>
+  <div class="relative z-10 max-w-screen-2xl mx-auto px-8">
+    <div class="max-w-3xl">
+      <h1 class="text-5xl lg:text-7xl font-extrabold text-white tracking-tighter mb-6 leading-tight">
+        Power Equipment &<br/><span class="text-on-primary-container">Solutions</span>
+      </h1>
+      <p class="text-lg text-blue-100 font-light leading-relaxed mb-8 max-w-2xl">
+        Comprehensive product portfolio covering Power Transformers, High-Voltage Switchgear, Energy Supply, Cables, and Professional Services.
+      </p>
+      <div class="flex gap-4 flex-wrap">
+        <span class="px-4 py-1 rounded-full bg-secondary-container text-on-secondary-container text-xs font-bold uppercase tracking-widest">Power Transformers</span>
+        <span class="px-4 py-1 rounded-full bg-secondary-container text-on-secondary-container text-xs font-bold uppercase tracking-widest">Switchgear</span>
+        <span class="px-4 py-1 rounded-full bg-secondary-container text-on-secondary-container text-xs font-bold uppercase tracking-widest">Energy Supply</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Section 1: Power Transformers -->
+<section class="py-24 bg-surface px-8">
+  <div class="max-w-screen-2xl mx-auto">
+    <div class="flex flex-col md:flex-row justify-between items-end mb-16 gap-6">
+      <div>
+        <h2 class="text-4xl font-bold text-on-surface tracking-tighter mb-4">01 Power Transformers</h2>
+        <div class="h-1 w-24 bg-primary"></div>
+      </div>
+      <p class="text-on-surface-variant max-w-md text-sm leading-relaxed">
+        Oil-Immersed / Dry-Type / Special Transformers — engineered for reliability across diverse applications.
+      </p>
+    </div>
+
+    <!-- Transformer Intro Card -->
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-12">
+      <div class="relative h-64 lg:h-auto rounded-xl overflow-hidden shadow-lg">
+        <img alt="Power Transformers" class="absolute inset-0 w-full h-full object-cover" src="images/image1.jpg"/>
+        <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"></div>
+        <div class="absolute bottom-6 left-6 text-white">
+          <p class="text-xs uppercase tracking-widest opacity-80">Conjoy Innovation Technology</p>
+          <p class="text-sm opacity-70">Stay in Integrity, Pursue the Limitless</p>
+        </div>
+      </div>
+      <div class="bg-surface-container-lowest p-10 rounded-xl shadow-sm flex flex-col justify-center">
+        <span class="text-primary font-bold text-xs uppercase tracking-widest mb-4">Professional Power Equipment Solutions</span>
+        <h3 class="text-3xl font-bold text-on-surface mb-6 tracking-tight">Power Transformers</h3>
+        <p class="text-on-surface-variant leading-relaxed mb-8">
+          Delivering advanced transformer technology for efficient voltage conversion and transmission, tailored for industrial and commercial applications worldwide.
+        </p>
+      </div>
+    </div>
+
+    <!-- Oil-Immersed Transformers -->
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-8">
+    
+      <div class="bg-surface-container-lowest p-10 rounded-xl shadow-sm flex flex-col justify-center">
+        <h3 class="text-2xl font-bold text-on-surface mb-6 tracking-tight">Oil-Immersed Transformers</h3>
+        <div class="grid grid-cols-2 gap-4 mb-6">
+          <div class="bg-surface-container-low p-4 rounded-lg">
+            <span class="block text-xs font-bold text-outline uppercase mb-1">Installation</span>
+            <span class="text-sm text-on-surface">Indoor or Outdoor</span>
+          </div>
+          <div class="bg-surface-container-low p-4 rounded-lg">
+            <span class="block text-xs font-bold text-outline uppercase mb-1">Capacity Range</span>
+            <span class="text-sm text-on-surface">2MVA - 1220MVA</span>
+          </div>
+          <div class="bg-surface-container-low p-4 rounded-lg">
+            <span class="block text-xs font-bold text-outline uppercase mb-1">Rated Voltage</span>
+            <span class="text-sm text-on-surface">Up to 500kV</span>
+          </div>
+          <div class="bg-surface-container-low p-4 rounded-lg">
+            <span class="block text-xs font-bold text-outline uppercase mb-1">Insulation Medium</span>
+            <span class="text-sm text-on-surface">Mineral Oil</span>
+          </div>
+          <div class="bg-surface-container-low p-4 rounded-lg">
+            <span class="block text-xs font-bold text-outline uppercase mb-1">Altitude</span>
+            <span class="text-sm text-on-surface">Up to 4000m</span>
+          </div>
+          <div class="bg-surface-container-low p-4 rounded-lg">
+            <span class="block text-xs font-bold text-outline uppercase mb-1">Ambient Temp</span>
+            <span class="text-sm text-on-surface">-45°C to +55°C</span>
+          </div>
+        </div>
+        <p class="text-xs font-bold text-outline uppercase tracking-widest">Standards: GB, IEC, IEEE/ANSI, GOST</p>
+      </div>
+      <div class="bg-surface-container-lowest rounded-xl shadow-sm overflow-hidden border-b-2 border-primary/10 flex flex-col items-center justify-center">
+       <img alt="Oil-Immersed Transformers" class="w-[380px] h-[300px]" src="images/image24.jpg" />
+      </div>
+    </div>
+
+    <!-- Dry-Type Transformers -->
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-8">
+      <div class="bg-surface-container-lowest p-10 rounded-xl shadow-sm flex flex-col justify-center">
+        <h3 class="text-2xl font-bold text-on-surface mb-6 tracking-tight">Dry-Type Transformers (SC / SCB)</h3>
+        <div class="space-y-4">
+          <div class="flex items-start gap-4">
+            <span class="material-symbols-outlined text-primary text-xl mt-0.5">check_circle</span>
+            <div>
+              <span class="text-sm font-semibold text-on-surface">HV Winding</span>
+              <p class="text-xs text-on-surface-variant">Premium electromagnetic wire, German casting equipment, vacuum filling with fiberglass reinforcement</p>
+            </div>
+          </div>
+          <div class="flex items-start gap-4">
+            <span class="material-symbols-outlined text-primary text-xl mt-0.5">check_circle</span>
+            <div>
+              <span class="text-sm font-semibold text-on-surface">Core</span>
+              <p class="text-xs text-on-surface-variant">Cold-rolled grain-oriented silicon steel, automatic cutting, 7-step lap joint</p>
+            </div>
+          </div>
+          <div class="flex items-start gap-4">
+            <span class="material-symbols-outlined text-primary text-xl mt-0.5">check_circle</span>
+            <div>
+              <span class="text-sm font-semibold text-on-surface">Temperature Monitoring</span>
+              <p class="text-xs text-on-surface-variant">Integrated controller with 4-20mA or RS485</p>
+            </div>
+          </div>
+          <div class="flex items-start gap-4">
+            <span class="material-symbols-outlined text-primary text-xl mt-0.5">check_circle</span>
+            <div>
+              <span class="text-sm font-semibold text-on-surface">Protection</span>
+              <p class="text-xs text-on-surface-variant">Optional IP44-IP65 enclosures, steel/stainless steel/aluminum materials</p>
+            </div>
+          </div>
+          <div class="flex items-start gap-4">
+              <span class="text-sm font-semibold text-on-surface"></span>
+              <p class="text-xs text-on-surface-variant">Voltage: ≤40.5kV |  Max Capacity: up to 25MVA  |  Low partial discharge (<10pC)</p>
+          </div>
+           <div class="flex items-start gap-4">
+              <span class="text-sm font-semibold text-on-surface"></span>
+              <p class="text-xs text-on-surface-variant">Safe: no oil, flame-retardant  |  Available in H-class and F-class insulation ratings per customer requirements.</p>
+          </div>
+        </div>
+      </div>
+       <div class="bg-surface-container-lowest rounded-xl shadow-sm overflow-hidden border-b-2 border-primary/10 flex flex-col items-center justify-center">
+       <img alt="Dry-Type Transformers" class="w-[380px] h-[300px]" src="images/image25.jpg"/>
+      </div>
+    </div>
+
+    <!-- Dry-type Hydrogen Making Energy Storage Rectifier Transformers -->
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+      <div class="bg-surface-container-lowest p-10 rounded-xl shadow-sm">
+        <h3 class="text-2xl font-bold text-on-surface mb-6 tracking-tight">Dry-type Hydrogen Making Energy Storage Rectifier Transformers</h3>
+        <div class="grid grid-cols-2 gap-4">
+          <div class="bg-surface-container-low p-4 rounded-lg text-center">
+            <span class="block text-primary font-bold text-lg mb-1">Capacity </span>
+            <span class="text-[10px] uppercase font-bold text-outline">5.3MVA</span>
+          </div>
+          <div class="bg-surface-container-low p-4 rounded-lg text-center">
+            <span class="block text-primary font-bold text-lg mb-1">Voltage </span>
+            <span class="text-[10px] uppercase font-bold text-outline">10/2X0.45kV</span>
+          </div>
+          <div class="bg-surface-container-low p-4 rounded-lg text-center">
+            <span class="block text-primary font-bold text-lg mb-1">12-Pulse Rectification </span>
+            <span class="text-[10px] uppercase font-bold text-outline">Three-phase fully controlled bridge, non same phase, reverse parallel</span>
+          </div>
+          <div class="bg-surface-container-low p-4 rounded-lg text-center">
+            <span class="block text-primary font-bold text-lg mb-1">Low Noise </span>
+            <span class="text-[10px] uppercase font-bold text-outline">More than 10 dB below industry standard</span>
+          </div>
+          <div class="bg-surface-container-low p-4 rounded-lg text-center">
+            <span class="block text-primary font-bold text-lg mb-1">Low Partial Discharge </span>
+            <span class="text-[10px] uppercase font-bold text-outline">Alkali-free glass fiber insulation, epoxy resin vacuum casting, partial discharge < 10 pc</span>
+          </div>
+          <div class="bg-surface-container-low p-4 rounded-lg text-center">
+            <span class="block text-primary font-bold text-lg mb-1">High Efficiency </span>
+            <span class="text-[10px] uppercase font-bold text-outline">Efficiency η > 99%</span>
+          </div>
+          <div class="bg-surface-container-low p-4 rounded-lg text-center">
+            <span class="block text-primary font-bold text-lg mb-1">Axial Double-Split Structure </span>
+            <span class="text-[10px] uppercase font-bold text-outline">Designed with anaxial double-split structure</span>
+          </div>
+        </div>
+      </div>
+       <div class="bg-surface-container-lowest rounded-xl shadow-sm overflow-hidden border-b-2 border-primary/10 flex flex-col items-center justify-center">
+       <img alt="Dry-type Hydrogen Making Energy Storage Rectifier Transformers" class="w-[380px] h-[300px] " src="images/image26.jpg"/>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- Section 2: High-Voltage Switchgear -->
+<section class="py-24 bg-surface-container-low px-8">
+  <div class="max-w-screen-2xl mx-auto">
+    <div class="flex flex-col md:flex-row justify-between items-end mb-16 gap-6">
+      <div>
+        <h2 class="text-4xl font-bold text-on-surface tracking-tighter mb-4">02 High-Voltage Switchgear</h2>
+        <div class="h-1 w-24 bg-primary"></div>
+      </div>
+      <p class="text-on-surface-variant max-w-md text-sm leading-relaxed">
+        GIS / Circuit Breakers / Disconnectors — comprehensive solutions for high-voltage power transmission.
+      </p>
+    </div>
+
+    <!-- Switchgear Intro -->
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-8">
+      <div class="relative h-64 lg:h-auto rounded-xl overflow-hidden shadow-lg">
+        <img alt="High-Voltage Switchgear" class="absolute inset-0 w-full h-full object-cover" src="images/image6.jpg"/>
+        <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"></div>
+        <div class="absolute bottom-6 left-6 text-white">
+          <p class="text-xs uppercase tracking-widest opacity-80">Professional Power Equipment Solutions</p>
+          <p class="text-sm opacity-70">GIS / Circuit Breakers / Disconnectors</p>
+        </div>
+      </div>
+      <div class="bg-surface-container-lowest p-10 rounded-xl shadow-sm flex flex-col justify-center">
+        <span class="text-primary font-bold text-xs uppercase tracking-widest mb-4">Professional Power Equipment Solutions</span>
+        <h3 class="text-3xl font-bold text-on-surface mb-6 tracking-tight">High-Voltage Switchgear</h3>
+        <p class="text-on-surface-variant leading-relaxed mb-8">
+          Comprehensive range of high-voltage switchgear equipment designed for reliable power transmission and distribution in challenging environments.
+        </p>
+      </div>
+    </div>
+
+    <!-- GIS -->
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-8">
+      
+      <div class="bg-surface-container-lowest p-10 rounded-xl shadow-sm">
+        <h3 class="text-2xl font-bold text-on-surface mb-6 tracking-tight">Gas Insulated Metal-Enclosed Switchgear (GIS)</h3>
+        <div class="grid grid-cols-2 gap-4 mb-6">
+          <div class="bg-surface-container-low p-4 rounded-lg">
+            <span class="block text-xs font-bold text-outline uppercase mb-1">Rated Voltage</span>
+            <span class="text-sm text-on-surface">145-800 kV</span>
+          </div>
+          <div class="bg-surface-container-low p-4 rounded-lg">
+            <span class="block text-xs font-bold text-outline uppercase mb-1">Rated Current</span>
+            <span class="text-sm text-on-surface">≤6300 A</span>
+          </div>
+          <div class="bg-surface-container-low p-4 rounded-lg">
+            <span class="block text-xs font-bold text-outline uppercase mb-1">Frequency</span>
+            <span class="text-sm text-on-surface">50Hz / 60Hz</span>
+          </div>
+          <div class="bg-surface-container-low p-4 rounded-lg">
+            <span class="block text-xs font-bold text-outline uppercase mb-1">Short-circuit Breaking</span>
+            <span class="text-sm text-on-surface">≤63 kA</span>
+          </div>
+           <div class="bg-surface-container-low p-4 rounded-lg">
+            <span class="block text-xs font-bold text-outline uppercase mb-1">Short-time Current</span>
+            <span class="text-sm text-on-surface">≤80 kA</span>
+          </div>
+          <div class="bg-surface-container-low p-4 rounded-lg">
+            <span class="block text-xs font-bold text-outline uppercase mb-1">Power Frequency Withstand</span>
+            <span class="text-sm text-on-surface">275-960 kV</span>
+          </div>
+          <div class="bg-surface-container-low p-4 rounded-lg">
+            <span class="block text-xs font-bold text-outline uppercase mb-1">Lightning Impulse</span>
+            <span class="text-sm text-on-surface">650-2100 kV</span>
+          </div>
+        </div>
+        <p class="text-xs text-on-surface-variant">• Compact design, significantly reduced footprint compared to AIS</p>
+        <p class="text-xs text-on-surface-variant">• Modular design for flexible configuration and easy expansion</p>
+        <p class="text-xs text-on-surface-variant">• Low partial discharge (≤5pC for complete bay, ≤2pC for insulation parts)</p>
+        <p class="text-xs text-on-surface-variant">• High reliability with 10,000 mechanical operations for CB and DS</p>
+      </div>
+      <div class="bg-surface-container-lowest rounded-xl shadow-sm overflow-hidden border-b-2 border-primary/10 flex flex-col items-center justify-center">
+        <img alt="GIS" class=" object-cover" src="images/image27.jpg" width="360" height="240"/>
+        <img alt="GIS" class=" object-cover" src="images/image28.jpg" width="360" height="240"/>
+      </div>
+    </div>
+
+    <!-- Circuit Breakers -->
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-8">
+      <div class="bg-surface-container-lowest p-10 rounded-xl shadow-sm ">
+        <h3 class="text-2xl font-bold text-on-surface mb-6 tracking-tight">High-Voltage Circuit Breakers</h3>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <div class="bg-surface-container-low p-6 rounded-lg">
+            <span class="block text-primary font-bold text-lg mb-2">Tank Circuit Breaker (DTCB)</span>
+            <span class="text-xs text-on-surface-variant">SF6 | 126kV - 800kV</span>
+            <ul class="mt-3 space-y-2">
+              <li class="flex items-center gap-2 text-xs text-on-surface"><span class="material-symbols-outlined text-primary text-sm">check</span> High breaking capacity</li>
+              <li class="flex items-center gap-2 text-xs text-on-surface"><span class="material-symbols-outlined text-primary text-sm">check</span> Low operating energy</li>
+              <li class="flex items-center gap-2 text-xs text-on-surface"><span class="material-symbols-outlined text-primary text-sm">check</span> Long mechanical life</li>
+              <li class="flex items-center gap-2 text-xs text-on-surface"><span class="material-symbols-outlined text-primary text-sm">check</span> Suitable for harsh environments</li>
+            </ul>
+          </div>
+          <div class="bg-surface-container-low p-6 rounded-lg">
+            <span class="block text-primary font-bold text-lg mb-2">SF6 Circuit Breaker</span>
+            <span class="text-xs text-on-surface-variant">SF6 | 40.5kV - 170kV</span>
+            <ul class="mt-3 space-y-2">
+              <li class="flex items-center gap-2 text-xs text-on-surface"><span class="material-symbols-outlined text-primary text-sm">check</span> Spring operating mechanism</li>
+              <li class="flex items-center gap-2 text-xs text-on-surface"><span class="material-symbols-outlined text-primary text-sm">check</span> Single or three-phase operation</li>
+              <li class="flex items-center gap-2 text-xs text-on-surface"><span class="material-symbols-outlined text-primary text-sm">check</span> Porcelain or composite insulation</li>
+              <li class="flex items-center gap-2 text-xs text-on-surface"><span class="material-symbols-outlined text-primary text-sm">check</span> Wide ambient temp range</li>
+            </ul>
+          </div>
+          <div class="bg-surface-container-low p-6 rounded-lg">
+            <span class="block text-primary font-bold text-lg mb-2">Vacuum Circuit Breaker</span>
+            <span class="text-xs text-on-surface-variant">Vacuum | 40.5kV - 72.5kV</span>
+            <ul class="mt-3 space-y-2">
+              <li class="flex items-center gap-2 text-xs text-on-surface"><span class="material-symbols-outlined text-primary text-sm">check</span> Maintenance-free vacuum interrupter</li>
+              <li class="flex items-center gap-2 text-xs text-on-surface"><span class="material-symbols-outlined text-primary text-sm">check</span> Environmentally friendly (no SF6)</li>
+              <li class="flex items-center gap-2 text-xs text-on-surface"><span class="material-symbols-outlined text-primary text-sm">check</span> High electrical endurance</li>
+              <li class="flex items-center gap-2 text-xs text-on-surface"><span class="material-symbols-outlined text-primary text-sm">check</span> Compact design</li>
+            </ul>
+          </div>
+           <div class="bg-surface-container-low p-6 rounded-lg">
+            <span class="block text-primary font-bold text-lg mb-2">Pole-Mounted Reclosers</span>
+            <span class="text-xs text-on-surface-variant">Vacuum | 12kV</span>
+            <ul class="mt-3 space-y-2">
+              <li class="flex items-center gap-2 text-xs text-on-surface"><span class="material-symbols-outlined text-primary text-sm">check</span> Intelligent control</li>
+              <li class="flex items-center gap-2 text-xs text-on-surface"><span class="material-symbols-outlined text-primary text-sm">check</span> Fault detection & isolation</li>
+              <li class="flex items-center gap-2 text-xs text-on-surface"><span class="material-symbols-outlined text-primary text-sm">check</span> Auto reclosing</li>
+              <li class="flex items-center gap-2 text-xs text-on-surface"><span class="material-symbols-outlined text-primary text-sm">check</span> Remote monitoring capable</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="bg-surface-container-lowest rounded-xl shadow-sm overflow-hidden border-b-2 border-primary/10 flex flex-col items-center justify-center">
+        <img alt="GIS" class=" object-cover" src="images/image29.jpg" width="360" height="240"/>
+        <img alt="GIS" class=" object-cover" src="images/image30.jpg" width="360" height="240"/>
+      </div>
+    </div>
+
+    <!-- Disconnectors -->
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+      <div class="bg-surface-container-lowest p-10 rounded-xl shadow-sm">
+        <h3 class="text-2xl font-bold text-on-surface mb-6 tracking-tight">High-Voltage Disconnectors</h3>
+        <div class="grid grid-cols-2 gap-4 mb-6">
+          <div class="bg-surface-container-low p-4 rounded-lg">
+            <span class="block text-xs font-bold text-outline uppercase mb-1">Comprehensive Range</span>
+            <span class="text-sm text-on-surface">12kV - 800kV</span>
+          </div>
+          <div class="bg-surface-container-low p-4 rounded-lg">
+            <span class="block text-xs font-bold text-outline uppercase mb-1">Rated Current</span>
+            <span class="text-sm text-on-surface">Up to 5000A</span>
+          </div>
+          <div class="bg-surface-container-low p-4 rounded-lg">
+            <span class="block text-xs font-bold text-outline uppercase mb-1">Short-circuit Current</span>
+            <span class="text-sm text-on-surface">Up to 63kA/3s</span>
+          </div>
+          <div class="bg-surface-container-low p-4 rounded-lg">
+            <span class="block text-xs font-bold text-outline uppercase mb-1">Insulation</span>
+            <span class="text-sm text-on-surface">Porcelain or Composite Silicone Rubber</span>
+          </div>
+          <div class="bg-surface-container-low p-4 rounded-lg">
+            <span class="block text-xs font-bold text-outline uppercase mb-1">Ambient Temp</span>
+            <span class="text-sm text-on-surface">-50°C to +50°C</span>
+          </div>
+        </div>
+        <p class="text-sm font-semibold text-on-surface">Types</p>
+        <p class="text-xs text-on-surface-variant">• Double-column horizontal rotating  | 12kV - 550kV V-type  |  compact design</p>
+        <p class="text-xs text-on-surface-variant">• Double-column V-type  |  40.5kV - 126kV  |  Vertical opening, space-saving</p>
+        <p class="text-xs text-on-surface-variant">• Three-column horizontal rotating | 40.5kV - 800kV  | High current capacity </p>
+        <p class="text-xs text-on-surface-variant">• Double-column horizontal telescopic | 126kV - 550kV | Low profile installation</p>
+        <p class="text-xs text-on-surface-variant">• Single-column single-arm vertical telescopic | 126kV - 550kV | Compact substation design</p>
+        <p class="text-xs text-on-surface-variant">• Single-column double-arm vertical telescopic  |  126kV - 550kV  |  Scissor-type mechanism </p>
+      </div>
+        <div class="bg-surface-container-lowest rounded-xl shadow-sm overflow-hidden border-b-2 border-primary/10 flex flex-col items-center justify-center">
+          <img alt="GIS" class=" object-cover" src="images/image31-2.jpg" width="360" height="240"/>
+          <img alt="GIS" class=" object-cover" src="images/image32.jpg" width="360" height="240"/>
+        </div>
+    </div>
+  </div>
+</section>
+
+<!-- Section 3: Energy Supply -->
+<section class="py-24 bg-surface px-8">
+  <div class="max-w-screen-2xl mx-auto">
+    <div class="flex flex-col md:flex-row justify-between items-end mb-16 gap-6">
+      <div>
+        <h2 class="text-4xl font-bold text-on-surface tracking-tighter mb-4">03 Energy Supply</h2>
+        <div class="h-1 w-24 bg-primary"></div>
+      </div>
+    </div>
+
+    <!-- Energy Supply Intro -->
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-12">
+      <div class="relative h-64 lg:h-auto rounded-xl overflow-hidden shadow-lg">
+        <img alt="Energy Supply" class="absolute inset-0 w-full h-full object-cover" src="images/image13.jpg"/>
+        <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"></div>
+        <div class="absolute bottom-6 left-6 text-white">
+          <p class="text-xs uppercase tracking-widest opacity-80">Professional Power Equipment Solutions</p>
+          <p class="text-sm opacity-70">Power Generation / Energy Storage Systems</p>
+        </div>
+      </div>
+      <div class="bg-surface-container-lowest p-10 rounded-xl shadow-sm flex flex-col justify-center">
+        <span class="text-primary font-bold text-xs uppercase tracking-widest mb-4">Professional Power Equipment Solutions</span>
+        <h3 class="text-3xl font-bold text-on-surface mb-6 tracking-tight">Energy Supply Solutions</h3>
+        <p class="text-on-surface-variant leading-relaxed mb-8">
+          Comprehensive energy supply solutions including gas power generation, hybrid systems, and battery energy storage systems (BESS) for diverse application needs.
+        </p>
+      </div>
+    </div>
+
+    <!-- Gas Power & Hybrid -->
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-8">
+     <div class="bg-surface-container-lowest p-10 rounded-xl shadow-sm">
+        <h3 class="text-2xl font-bold text-on-surface mb-4 tracking-tight">Gas Power & Hybrid Solutions (1kW-5MW)</h3>
+        <p class="text-on-surface-variant font-semibold text-sm mb-4">BESS Range</p>
+        <ul class="space-y-2 mb-6">
+          <li class="flex items-center gap-3 text-sm text-on-surface"><span class="material-symbols-outlined text-primary text-sm">check_circle</span> TP50BESS - TP200BESS (Air-Cooled)</li>
+          <li class="flex items-center gap-3 text-sm text-on-surface"><span class="material-symbols-outlined text-primary text-sm">check_circle</span> TP250BESS - TP1000BESS (Container)</li>
+          <li class="flex items-center gap-3 text-sm text-on-surface"><span class="material-symbols-outlined text-primary text-sm">check_circle</span> TP1500BESS - TP5000BESS+ (Utility)</li>
+        </ul>
+        <p class="text-on-surface-variant font-semibold text-sm mb-4">Hybrid Configurations</p>
+         <ul class="space-y-2 mb-6">
+          <li class="flex items-center gap-3 text-sm text-on-surface"><span class="material-symbols-outlined text-primary text-sm">check_circle</span> Diesel + BESS (70% runtime optimization)</li>
+          <li class="flex items-center gap-3 text-sm text-on-surface"><span class="material-symbols-outlined text-primary text-sm">check_circle</span> Solar + Diesel + BESS</li>
+          <li class="flex items-center gap-3 text-sm text-on-surface"><span class="material-symbols-outlined text-primary text-sm">check_circle</span> Wind + Solar + Diesel + BESS</li>
+        </ul>
+     </div>
+      <div class="bg-surface-container-lowest rounded-xl shadow-sm overflow-hidden border-b-2 border-primary/10 flex items-center justify-center p-4"> 
+         <!--<div class="bg-surface-container-lowest rounded-xl shadow-sm overflow-hidden border-b-2 border-primary/10 flex items-center justify-center p-4">-->
+         <img src="images/image33.jpg" class="w-full max-w-[380px] h-auto object-cover rounded-lg" alt="Gas Power & Hybrid"/>
+     </div>
+    </div>
+  
+
+    <!-- Gas Power Efficiency -->
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
+      <div class="bg-surface-container-lowest p-10 rounded-xl shadow-sm">
+        <h3 class="text-2xl font-bold text-on-surface mb-4 tracking-tight">Gas Power & Hybrid Solutions</h3>
+        <p class="text-on-surface-variant font-semibold text-sm mb-4">High Efficiency</p>
+        <ul class="space-y-2 mb-6">
+          <li class="flex items-center gap-3 text-sm text-on-surface"><span class="material-symbols-outlined text-primary text-sm">check_circle</span> >40% Electrical</li>
+          <li class="flex items-center gap-3 text-sm text-on-surface"><span class="material-symbols-outlined text-primary text-sm">check_circle</span> >88% Comprehensive</li>
+        </ul>
+        <p class="text-on-surface-variant font-semibold text-sm mb-4">Low Emission</p>
+        <ul class="space-y-2 mb-6">
+          <li class="flex items-center gap-3 text-sm text-on-surface"><span class="material-symbols-outlined text-primary text-sm">check_circle</span> ≤500 mg/Nm³ NOx</li>
+          <li class="flex items-center gap-3 text-sm text-on-surface"><span class="material-symbols-outlined text-primary text-sm">check_circle</span> ≤0.2g/kWh Oil Consumption</li>
+        </ul>
+        <p class="text-on-surface-variant font-semibold text-sm mb-4">High Reliability</p>
+        <ul class="space-y-2 mb-6">
+          <li class="flex items-center gap-3 text-sm text-on-surface"><span class="material-symbols-outlined text-primary text-sm">check_circle</span> 64,000h Major Overhaul</li>
+          <li class="flex items-center gap-3 text-sm text-on-surface"><span class="material-symbols-outlined text-primary text-sm">check_circle</span> >80,000h Operation</li>
+        </ul>
+         <p class="text-on-surface-variant font-semibold text-sm mb-4">High Safety</p>
+        <ul class="space-y-2 mb-6">
+          <li class="flex items-center gap-3 text-sm text-on-surface"><span class="material-symbols-outlined text-primary text-sm">check_circle</span> Multi-stage Flame Arrestor</li>
+          <li class="flex items-center gap-3 text-sm text-on-surface"><span class="material-symbols-outlined text-primary text-sm">check_circle</span> Explosion-proof Design</li>
+        </ul>
+         <p class="text-on-surface-variant font-semibold text-sm mb-4">Compact Design</p>
+        <ul class="space-y-2 mb-6">
+          <li class="flex items-center gap-3 text-sm text-on-surface"><span class="material-symbols-outlined text-primary text-sm">check_circle</span> Small Volume & Weight</li>
+          <li class="flex items-center gap-3 text-sm text-on-surface"><span class="material-symbols-outlined text-primary text-sm">check_circle</span> Modular Scalability</li>
+        </ul>
+      </div>
+      <div class="bg-surface-container-lowest rounded-xl shadow-sm overflow-hidden border-b-2 border-primary/10 flex items-center justify-center p-4"> 
+         <!--<div class="bg-surface-container-lowest rounded-xl shadow-sm overflow-hidden border-b-2 border-primary/10 flex items-center justify-center p-4">-->
+         <img src="images/image34.jpg" class="max-w-[580px] h-auto object-cover rounded-lg" alt="Gas Power & Hybrid"/>
+     </div>
+    </div>
+
+    <!-- Energy Storage Systems -->
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+      <div class="bg-surface-container-lowest rounded-xl shadow-sm overflow-hidden border-b-2 border-primary/10 order-1 lg:order-2">
+        <div class="bg-surface-container-lowest rounded-xl shadow-sm overflow-hidden border-b-2 border-primary/10 flex flex-col items-center justify-center">
+          <img alt="GIS" class=" object-cover" src="images/image35.jpg" width="340" height="240"/>
+          <img alt="GIS" class=" object-cover" src="images/image36.jpg" width="340" height="240"/>
+        </div>
+      </div>
+      <div class="bg-surface-container-lowest p-10 rounded-xl shadow-sm order-2 lg:order-1">
+        <h3 class="text-2xl font-bold text-on-surface mb-6 tracking-tight">Energy Storage Systems</h3>
+        <div class="space-y-4 mb-6">
+          <div class="bg-surface-container-low p-4 rounded-lg">
+            <span class="text-sm font-semibold text-on-surface block mb-2">Integrated Storage System</span>
+            <ul class="space-y-1">
+              <li class="text-xs text-on-surface-variant">Power Output: 3.0kW - 10.0kW</li>
+              <li class="text-xs text-on-surface-variant">Max. Efficiency: 97.8%</li>
+              <li class="text-xs text-on-surface-variant">Switch Time: < 10ms</li>
+              <li class="text-xs text-on-surface-variant">Ingress Protection: IP65</li>
+            </ul>
+          </div>
+          <div class="bg-surface-container-low p-4 rounded-lg">
+            <span class="text-sm font-semibold text-on-surface block mb-2">3-Phase Hybrid Inverter</span>
+            <ul class="space-y-1">
+              <li class="text-xs text-on-surface-variant">• Power Output: 5.0kW - 30.0kW</li>
+              <li class="text-xs text-on-surface-variant">• Max. Efficiency: 98.5%</li>
+              <li class="text-xs text-on-surface-variant">• Switch Time: < 10ms</li>
+              <li class="text-xs text-on-surface-variant">• Ingress Protection : IP 65</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+
+  </div>
+</section>
+
+<!-- Section 4: Cables -->
+<section class="py-24 bg-surface-container-low px-8">
+  <div class="max-w-screen-2xl mx-auto">
+    <div class="flex flex-col md:flex-row justify-between items-end mb-16 gap-6">
+      <div>
+        <h2 class="text-4xl font-bold text-on-surface tracking-tighter mb-4">04 Cables</h2>
+        <div class="h-1 w-24 bg-primary"></div>
+      </div>
+      
+    </div>
+
+    <!-- Cables Intro -->
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-12">
+      <div class="relative h-64 lg:h-auto rounded-xl overflow-hidden shadow-lg">
+        <img alt="Cables" class="absolute inset-0 w-full h-full object-cover" src="images/image12.jpg"/>
+        <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"></div>
+        <div class="absolute bottom-6 left-6 text-white">
+          <p class="text-xs uppercase tracking-widest opacity-80">Professional Equipment Solutions</p>
+          <p class="text-sm opacity-70">Fiber optic cable / Ethernet cable</p>
+        </div>
+      </div>
+      <div class="bg-surface-container-lowest p-10 rounded-xl shadow-sm flex flex-col justify-center">
+        <span class="text-primary font-bold text-xs uppercase tracking-widest mb-4">Professional Equipment Solutions</span>
+        <h3 class="text-3xl font-bold text-on-surface mb-6 tracking-tight">Cables</h3>
+        <p class="text-on-surface-variant leading-relaxed mb-8">
+          Comprehensive range of fiber optic and Ethernet cables designed for reliable data transmission and network connectivity.
+        </p>
+      </div>
+    </div>
+
+    <!-- Fiber Optic Cable -->
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-8">
+      <div class="bg-surface-container-lowest p-10 rounded-xl shadow-sm">
+        <h3 class="text-2xl font-bold text-on-surface mb-6 tracking-tight">Fiber Optic Cable / Ethernet Cable</h3>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <div class="bg-surface-container-low p-4 rounded-lg">
+            <span class="text-sm font-bold text-primary block mb-2">Single-mode Fiber (OS2)</span>
+            <ul class="space-y-1">
+              <li class="text-xs text-on-surface-variant">Core/Cladding: 9/125 μm</li>
+              <li class="text-xs text-on-surface-variant">Wavelength: 1310nm / 1550nm</li>
+              <li class="text-xs text-on-surface-variant">Distance: Long Range (Up to 10km - 100km)</li>
+              <li class="text-xs text-on-surface-variant">Attenuation: Very Low (~0.35 dB/km @1310nm)</li>
+            </ul>
+          </div>
+          <div class="bg-surface-container-low p-4 rounded-lg">
+            <span class="text-sm font-bold text-primary block mb-2">Multi-mode Fiber (OM3/OM4/OM5)</span>
+            <ul class="space-y-1">
+              <li class="text-xs text-on-surface-variant">Core/Cladding Diameter: 50/125 μm</li>
+              <li class="text-xs text-on-surface-variant">Operating Wavelength: 850 nm / 1300 nm</li>
+              <li class="text-xs text-on-surface-variant">Transmission Distance: Short Range (Up to 300m - 550m)</li>
+              <li class="text-xs text-on-surface-variant">Attenuation: Higher (~3.0 dB/km @850nm)</li>
+            </ul>
+          </div>
+           <div class="bg-surface-container-low p-4 rounded-lg">
+            <span class="text-sm font-bold text-primary block mb-2">Category 6A (Augmented Cat6)</span>
+            <ul class="space-y-1">
+              <li class="text-xs text-on-surface-variant">Standard: ANSI/TIA-568.2-D</li>
+              <li class="text-xs text-on-surface-variant">Max. Bandwidth: 500 MHz</li>
+              <li class="text-xs text-on-surface-variant">Data Rate: 10 Gbps</li>
+              <li class="text-xs text-on-surface-variant">Shielding Type: UTP (Unshielded) or F/UTP</li>
+            </ul>
+          </div>
+          <div class="bg-surface-container-low p-4 rounded-lg">
+            <span class="text-sm font-bold text-primary block mb-2">Category 7 (Class F)</span>
+            <ul class="space-y-1">
+              <li class="text-xs text-on-surface-variant">Standard: ISO/IEC 11801</li>
+              <li class="text-xs text-on-surface-variant">Max. Bandwidth: 600 MHz</li>
+              <li class="text-xs text-on-surface-variant">Data Rate: 10 Gbps</li>
+              <li class="text-xs text-on-surface-variant">Shielding Type: S/FTP (Individual foil + Overall braid)</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="bg-surface-container-lowest rounded-xl shadow-sm overflow-hidden border-b-2 border-primary/10 flex flex-col items-center justify-center p-4">
+          <img alt="Fiber Optic Cable" class="w-full max-w-[620px] h-auto object-cover rounded-lg" src="images/image37.jpg"/>
+    </div>
+
+  </div>
+</section>
+
+<!-- Section 5: Service -->
+<section class="py-24 bg-surface px-8">
+  <div class="max-w-screen-2xl mx-auto">
+    <div class="flex flex-col md:flex-row justify-between items-end mb-16 gap-6">
+      <div>
+        <h2 class="text-4xl font-bold text-on-surface tracking-tighter mb-4">05 Service</h2>
+        <div class="h-1 w-24 bg-primary"></div>
+      </div>
+      <p class="text-on-surface-variant max-w-md text-sm leading-relaxed">
+       Power Equipment Design | System Integration | On-site Installation Supervision | Equipment Maintenance
+      </p>
+    </div>
+
+    <!-- Service Intro -->
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-12">
+      <div class="relative h-64 lg:h-auto rounded-xl overflow-hidden shadow-lg">
+        <img alt="Service" class="absolute inset-0 w-full h-full object-cover" src="images/image17.png"/>
+        <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"></div>
+        <div class="absolute bottom-6 left-6 text-white">
+          <p class="text-xs uppercase tracking-widest opacity-80">Professional Power Equipment Services</p>
+          <p class="text-sm opacity-70">Design / Integration / Installation / Maintenance</p>
+        </div>
+      </div>
+      <div class="bg-surface-container-lowest p-10 rounded-xl shadow-sm flex flex-col justify-center">
+        <span class="text-primary font-bold text-xs uppercase tracking-widest mb-4">Professional Power Equipment Services</span>
+        <h3 class="text-3xl font-bold text-on-surface mb-6 tracking-tight">Power Equipment Services</h3>
+        <p class="text-on-surface-variant leading-relaxed mb-8">
+          Comprehensive services covering the entire lifecycle of power equipment from design to maintenance.
+        </p>
+      </div>
+    </div>
+
+    <!-- Service Details -->
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
+      <div class="bg-surface-container-lowest p-8 rounded-xl shadow-sm border-t-4 border-primary">
+        <span class="material-symbols-outlined text-4xl text-primary/40 mb-4">design_services</span>
+        <h4 class="text-lg font-bold text-on-surface mb-3">Power Equipment Design</h4>
+        <p class="text-xs text-on-surface-variant leading-relaxed">Tailoring electrical equipment and system configurations to meet specific customer requirements.</p>
+      </div>
+      <div class="bg-surface-container-lowest p-8 rounded-xl shadow-sm border-t-4 border-primary">
+        <span class="material-symbols-outlined text-4xl text-primary/40 mb-4">settings_system_daydream</span>
+        <h4 class="text-lg font-bold text-on-surface mb-3">System Integration</h4>
+        <p class="text-xs text-on-surface-variant leading-relaxed">Providing customized power equipment and system integration engineered to client specifications.</p>
+      </div>
+      <div class="bg-surface-container-lowest p-8 rounded-xl shadow-sm border-t-4 border-primary">
+        <span class="material-symbols-outlined text-4xl text-primary/40 mb-4">construction</span>
+        <h4 class="text-lg font-bold text-on-surface mb-3">On-site Installation Supervision</h4>
+        <p class="text-xs text-on-surface-variant leading-relaxed">Our senior engineers provide expert on-site supervision of installation and commissioning, guaranteeing seamless system integration and operational readiness.</p>
+      </div>
+      <div class="bg-surface-container-lowest p-8 rounded-xl shadow-sm border-t-4 border-primary">
+        <span class="material-symbols-outlined text-4xl text-primary/40 mb-4">build</span>
+        <h4 class="text-lg font-bold text-on-surface mb-3">Equipment Maintenance</h4>
+        <p class="text-xs text-on-surface-variant leading-relaxed">Ensuring equipment longevity through timely preventive maintenance and empowering clients with specialized technical training.</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- CTA Section -->
+<section class="py-24 bg-surface-container-low px-8">
+  <div class="max-w-screen-xl mx-auto bg-primary-container rounded-3xl overflow-hidden relative p-12 lg:p-20 text-center">
+    <div class="absolute top-0 right-0 p-8 opacity-10">
+      <span class="material-symbols-outlined text-[12rem] text-white">settings_input_component</span>
+    </div>
+    <div class="relative z-10 max-w-2xl mx-auto">
+      <h2 class="text-3xl lg:text-4xl font-bold text-white mb-6 tracking-tight">Need Custom Power Solutions?</h2>
+      <p class="text-on-primary-container mb-10 leading-relaxed">
+        Contact us today for a tailored solution for your project. Our engineering team is ready to help.
+      </p>
+      <div class="flex flex-col sm:flex-row gap-4 justify-center">
+        <a href="../contact_us_english/code.html" class="bg-white text-primary px-8 py-4 rounded-lg font-bold text-sm uppercase tracking-widest hover:bg-blue-50 transition-all flex items-center justify-center gap-2">
+          Get a Quote <span class="material-symbols-outlined">arrow_forward</span>
+        </a>
+        <a href="../home_page/code.html" class="bg-primary text-white border border-white/20 px-8 py-4 rounded-lg font-bold text-sm uppercase tracking-widest hover:bg-white/10 transition-all">
+          Back to Home
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- Footer -->
+<footer class="bg-slate-900 border-t border-slate-800">
+  <div class="grid grid-cols-1 md:grid-cols-4 gap-12 px-12 py-16 max-w-screen-2xl mx-auto">
+    <div class="space-y-6">
+      <div class="text-lg font-black text-white uppercase">Conjoy Innovation</div>
+      <p class="text-slate-400 text-xs leading-relaxed uppercase tracking-widest">
+        Professional power equipment and system integration services for North American data centers and computing centers.
+      </p>
+    </div>
+    <div class="flex flex-col gap-4">
+      <span class="text-white font-bold text-xs uppercase tracking-[0.2em] mb-2">Products</span>
+      <a class="text-slate-400 hover:text-white transition-colors text-xs uppercase tracking-widest" href="code.html">Power Transformers</a>
+      <a class="text-slate-400 hover:text-white transition-colors text-xs uppercase tracking-widest" href="code.html">Switchgear</a>
+      <a class="text-slate-400 hover:text-white transition-colors text-xs uppercase tracking-widest" href="code.html">Energy Supply</a>
+      <a class="text-slate-400 hover:text-white transition-colors text-xs uppercase tracking-widest" href="code.html">Cables</a>
+    </div>
+    <div class="flex flex-col gap-4">
+      <span class="text-white font-bold text-xs uppercase tracking-[0.2em] mb-2">Solutions</span>
+      <a class="text-slate-400 hover:text-white transition-colors text-xs uppercase tracking-widest" href="code.html">Data Center</a>
+      <a class="text-slate-400 hover:text-white transition-colors text-xs uppercase tracking-widest" href="code.html">Computing Center</a>
+      <a class="text-slate-400 hover:text-white transition-colors text-xs uppercase tracking-widest" href="code.html">Industrial</a>
+    </div>
+    <div class="flex flex-col gap-4">
+      <span class="text-white font-bold text-xs uppercase tracking-[0.2em] mb-2">Contact</span>
+      <span class="text-slate-400 text-xs uppercase tracking-widest">location_on Texas, USA</span>
+      <span class="text-slate-400 text-xs uppercase tracking-widest">language conjoyinnovation.com</span>
+      <span class="text-slate-400 text-xs uppercase tracking-widest">mail info@conjoyinnovation.com</span>
+    </div>
+  </div>
+  <div class="border-t border-slate-800 px-12 py-8 flex flex-col md:flex-row justify-between items-center gap-4">
+    <div class="text-slate-400 text-[10px] uppercase tracking-widest">
+      © 2024 Conjoy Innovation Technology. All rights reserved.
+    </div>
+    <div class="flex items-center gap-6">
+      <span class="text-slate-500 text-[10px] uppercase tracking-[0.3em]">Engineering the future</span>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
