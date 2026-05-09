@@ -67,6 +67,9 @@
     }
   </script>
   <style>
+    html {
+  scroll-behavior: smooth;
+}
     body { font-family: 'Inter', sans-serif; background-color: #f7f9ff; }
     .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; }
     .glass-nav { background: rgba(247, 249, 255, 0.8); backdrop-filter: blur(20px); }
@@ -85,8 +88,73 @@
       <div class="nav-links">
         <a href="../home_page/code.html">Home</a>
         <a href="../about_us/code.html">About Us</a>
-        <a href="code.html" class="active">Products</a>
-        <a href="../news_center/code.html">News</a>
+        <div class="relative group">
+  <a href="code.html"
+     class="active flex items-center gap-1">
+    Products
+    <span class="material-symbols-outlined text-[18px]">
+      expand_more
+    </span>
+  </a>
+
+  <!-- Dropdown Menu -->
+  <div class="absolute left-0 top-full mt-3 w-80
+              bg-white/70 backdrop-blur-xl rounded-2xl shadow-2xl
+              border border-white/20
+              opacity-0 invisible
+              translate-y-2
+              group-hover:opacity-100
+              group-hover:visible
+              group-hover:translate-y-0
+              transition-all duration-300
+              z-50">
+
+    <div class="p-3">
+
+      <a href="#power-transformers"
+         class="flex items-center gap-4 px-4 py-3 rounded-xl hover:bg-slate-100 transition">
+        <span class="text-primary font-bold text-sm">01</span>
+        <span class="text-sm font-semibold text-slate-800">
+          Power Transformers
+        </span>
+      </a>
+
+      <a href="#switchgear"
+         class="flex items-center gap-4 px-4 py-3 rounded-xl hover:bg-slate-100 transition">
+        <span class="text-primary font-bold text-sm">02</span>
+        <span class="text-sm font-semibold text-slate-800">
+          High-Voltage Switchgear
+        </span>
+      </a>
+
+      <a href="#energy-supply"
+         class="flex items-center gap-4 px-4 py-3 rounded-xl hover:bg-slate-100 transition">
+        <span class="text-primary font-bold text-sm">03</span>
+        <span class="text-sm font-semibold text-slate-800">
+          Energy Supply
+        </span>
+      </a>
+
+      <a href="#cables"
+         class="flex items-center gap-4 px-4 py-3 rounded-xl hover:bg-slate-100 transition">
+        <span class="text-primary font-bold text-sm">04</span>
+        <span class="text-sm font-semibold text-slate-800">
+          Cables
+        </span>
+      </a>
+
+      <a href="#service"
+         class="flex items-center gap-4 px-4 py-3 rounded-xl hover:bg-slate-100 transition">
+        <span class="text-primary font-bold text-sm">05</span>
+        <span class="text-sm font-semibold text-slate-800">
+          Service
+        </span>
+      </a>
+
+    </div>
+  </div>
+</div>
+        <!-- <a href="../news_center/code.html">News</a> -->
         <a href="../contact_us_english/code.html">Contact</a>
       </div>
       <a href="../contact_us_english/code.html" class="nav-cta">Get a Quote</a>
@@ -119,7 +187,7 @@
 </section>
 
 <!-- Section 1: Power Transformers -->
-<section class="py-24 bg-surface px-8">
+<section id="power-transformers" class="py-24 bg-surface px-8">
   <div class="max-w-screen-2xl mx-auto">
     <div class="flex flex-col md:flex-row justify-between items-end mb-16 gap-6">
       <div>
@@ -184,7 +252,7 @@
         <p class="text-xs font-bold text-outline uppercase tracking-widest">Standards: GB, IEC, IEEE/ANSI, GOST</p>
       </div>
       <div class="bg-surface-container-lowest rounded-xl shadow-sm overflow-hidden border-b-2 border-primary/10 flex flex-col items-center justify-center">
-       <img alt="Oil-Immersed Transformers" class="w-[380px] h-[300px]" src="images/image24.jpg" />
+       <img alt="Oil-Immersed Transformers" class="w-full max-w-[380px] h-auto object-cover" src="images/image24.jpg" />
       </div>
     </div>
 
@@ -280,7 +348,7 @@
 </section>
 
 <!-- Section 2: High-Voltage Switchgear -->
-<section class="py-24 bg-surface-container-low px-8">
+<section id="switchgear" class="py-24 bg-surface-container-low px-8">
   <div class="max-w-screen-2xl mx-auto">
     <div class="flex flex-col md:flex-row justify-between items-end mb-16 gap-6">
       <div>
@@ -453,7 +521,7 @@
 </section>
 
 <!-- Section 3: Energy Supply -->
-<section class="py-24 bg-surface px-8">
+<section id="energy-supply" class="py-24 bg-surface px-8">
   <div class="max-w-screen-2xl mx-auto">
     <div class="flex flex-col md:flex-row justify-between items-end mb-16 gap-6">
       <div>
@@ -579,7 +647,7 @@
 </section>
 
 <!-- Section 4: Cables -->
-<section class="py-24 bg-surface-container-low px-8">
+<section id="cables" class="py-24 bg-surface-container-low px-8">
   <div class="max-w-screen-2xl mx-auto">
     <div class="flex flex-col md:flex-row justify-between items-end mb-16 gap-6">
       <div>
@@ -659,7 +727,7 @@
 </section>
 
 <!-- Section 5: Service -->
-<section class="py-24 bg-surface px-8">
+<section id="service" class="py-24 bg-surface px-8">
   <div class="max-w-screen-2xl mx-auto">
     <div class="flex flex-col md:flex-row justify-between items-end mb-16 gap-6">
       <div>

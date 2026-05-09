@@ -1,12 +1,67 @@
 <!DOCTYPE html>
-<html lang="en">
+<html class="scroll-smooth" lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Conjoy Innovation Technology - Power Solutions for Data Centers</title>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>About Us | Conjoy Innovation Technology</title>
   <link rel="stylesheet" href="../styles.css">
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+  <script>
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "surface-container-low": "#f1f4fa",
+            "on-primary": "#ffffff",
+            "background": "#f7f9ff",
+            "surface-variant": "#dfe3e8",
+            "on-tertiary-fixed": "#051d30",
+            "on-background": "#181c20",
+            "surface-bright": "#f7f9ff",
+            "on-secondary-fixed": "#001d32",
+            "surface": "#f7f9ff",
+            "primary-container": "#004494",
+            "on-surface": "#181c20",
+            "on-surface-variant": "#434751",
+            "tertiary-container": "#34495e",
+            "on-tertiary-container": "#a2b8d1",
+            "primary": "#002e69",
+            "on-primary-container": "#91b5ff",
+            "secondary-container": "#5db8fe",
+            "surface-container-high": "#e5e8ee",
+            "secondary": "#006398",
+            "surface-container": "#ebeef4",
+            "on-primary-fixed": "#001a41",
+            "on-tertiary": "#ffffff",
+            "surface-container-lowest": "#ffffff",
+            "on-secondary-container": "#00476f",
+            "on-secondary-fixed-variant": "#004b74",
+            "surface-dim": "#d7dae0",
+            "outline": "#737783",
+            "outline-variant": "#c3c6d3",
+            "surface-container-highest": "#dfe3e8",
+            "inverse-surface": "#2d3135",
+            "inverse-on-surface": "#eef1f7",
+            "inverse-primary": "#adc6ff",
+            "primary-fixed": "#d8e2ff",
+            "primary-fixed-dim": "#adc6ff",
+            "secondary-fixed": "#cde5ff",
+            "secondary-fixed-dim": "#94ccff",
+            "tertiary-fixed": "#cfe5ff",
+            "tertiary-fixed-dim": "#b3c9e2",
+            "tertiary": "#1d3246",
+          }
+        }
+      }
+    }
+  </script>
   <style>
-    /* 参考 screen.jpg 的样式 */
+    body { font-family: 'Inter', sans-serif; }
+    .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; }
+     /* 参考 screen.jpg 的样式 */
     
     :root {
       --ref-primary: #00285a;
@@ -505,21 +560,88 @@
     }
   </style>
 </head>
-<body>
+<body class="bg-surface text-on-surface selection:bg-primary-fixed selection:text-on-primary-fixed" style="padding-top: 72px;">
 
 <!-- Navbar -->
 <nav class="navbar">
   <div class="container">
     <div class="nav-inner">
-      <a href="code.html" class="nav-logo">
+      <a href="../home_page/code.html" class="nav-logo">
         <img src="../logo.jpg" alt="Logo" class="nav-logo-img">
         Conjoy Innovation
       </a>
       <div class="nav-links">
-        <a href="code.html" class="active">Home</a>
+        <a href="../home_page/code.html">Home</a>
         <a href="../about_us/code.html">About Us</a>
-        <a href="../products_solutions/code.html">Products</a>
-        <a href="../news_center/code.html">News</a>
+        <div class="relative group">
+  <a href="../products_solutions/code.html"
+     class="nav-link flex items-center gap-1">
+    Products
+    <span class="material-symbols-outlined text-[18px]">
+      expand_more
+    </span>
+  </a>
+
+  <!-- Dropdown -->
+  <div class="absolute left-0 top-full mt-3 w-80
+              bg-white/60 backdrop-blur-2xl
+              rounded-2xl
+              shadow-[0_8px_32px_rgba(0,0,0,0.12)]
+              border border-white/30
+              opacity-0 invisible
+              translate-y-2
+              group-hover:opacity-100
+              group-hover:visible
+              group-hover:translate-y-0
+              transition-all duration-300
+              z-50">
+
+    <div class="p-3">
+
+      <a href="../products_solutions/code.html#power-transformers"
+         class="flex items-center gap-4 px-4 py-3 rounded-xl hover:bg-white/60 transition-all duration-200">
+        <span class="text-primary font-bold text-sm">01</span>
+        <span class="text-sm font-semibold text-slate-800">
+          Power Transformers
+        </span>
+      </a>
+
+      <a href="../products_solutions/code.html#switchgear"
+         class="flex items-center gap-4 px-4 py-3 rounded-xl hover:bg-white/60 transition-all duration-200">
+        <span class="text-primary font-bold text-sm">02</span>
+        <span class="text-sm font-semibold text-slate-800">
+          High-Voltage Switchgear
+        </span>
+      </a>
+
+      <a href="../products_solutions/code.html#energy-supply"
+         class="flex items-center gap-4 px-4 py-3 rounded-xl hover:bg-white/60 transition-all duration-200">
+        <span class="text-primary font-bold text-sm">03</span>
+        <span class="text-sm font-semibold text-slate-800">
+          Energy Supply
+        </span>
+      </a>
+
+      <a href="../products_solutions/code.html#cables"
+         class="flex items-center gap-4 px-4 py-3 rounded-xl hover:bg-white/60 transition-all duration-200">
+        <span class="text-primary font-bold text-sm">04</span>
+        <span class="text-sm font-semibold text-slate-800">
+          Cables
+        </span>
+      </a>
+
+      <a href="../products_solutions/code.html#service"
+         class="flex items-center gap-4 px-4 py-3 rounded-xl hover:bg-white/60 transition-all duration-200">
+        <span class="text-primary font-bold text-sm">05</span>
+        <span class="text-sm font-semibold text-slate-800">
+          Service
+        </span>
+      </a>
+
+    </div>
+  </div>
+</div>
+       <!-- <a href="../news_center/code.html">News</a> -->
         <a href="../contact_us_english/code.html">Contact</a>
       </div>
       <a href="../contact_us_english/code.html" class="nav-cta">Get a Quote</a>
